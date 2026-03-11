@@ -30,3 +30,6 @@ jobs:
 
     - name: Run Container
       run: docker run lr-devops-app
+
+    - name: Deploy Container
+      run: docker run lr-devops-app
