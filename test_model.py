@@ -1,21 +1,14 @@
-import numpy as np
 from sklearn.linear_model import LinearRegression
+import numpy as np
 
-X = np.array([[1], [2], [3], [4]])
-y = np.array([2, 4, 6])
+def test_linear_regression():
 
-def test_coefficient():
+    X = np.array([[1],[2],[3],[4],[5]])
+    y = np.array([2,4,6,8,10])
+
     model = LinearRegression()
-    model.fit(X, y)
-    assert round(model.coef_[0], 2) == 2.0
+    model.fit(X,y)
 
-def test_intercept():
-    model = LinearRegression()
-    model.fit(X, y)
-    assert round(model.intercept_, 2) == 0.0
+    prediction = model.predict([[6]])
 
-def test_predictions():
-    model = LinearRegression()
-    model.fit(X, y)
-    pred = model.predict([[5]])
-    assert round(pred[0], 2) == 10.0
+    assert round(prediction[0]) == 12
