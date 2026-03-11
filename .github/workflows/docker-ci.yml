@@ -23,6 +23,9 @@ jobs:
       run: |
         pip install -r requirements.txt
 
+    - name: Run tests
+      run: pytest
+
     - name: Build Docker Image
       run: |
         docker build -t lr-devops-app .
@@ -30,3 +33,6 @@ jobs:
     - name: Run Docker Container
       run: |
         docker run lr-devops-app
+
+    - name: Deploy Container
+      run: docker run lr-devops-app
