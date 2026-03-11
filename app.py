@@ -14,3 +14,5 @@ value = np.array([[6]])
 prediction = model.predict(value)
 
 print("Prediction:", prediction[0])
+
+print("deploying the project...")
