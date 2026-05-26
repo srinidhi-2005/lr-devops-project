@@ -1,4 +1,4 @@
-# Linear Regression ML model DevOps Project – ML CI/CD Cloud Deployment 🚀
+# Linear Regression ML model DevOps Project – ML CI/CD Cloud Deployment
 
 ## Project Overview
 
@@ -258,24 +258,6 @@ Inbound rules configured:
 | Custom TCP | 5000 |
 
 This allows SSH access and browser access to the Flask application.
-
----
-
-# Learning Outcomes
-
-This project demonstrates practical understanding of:
-
-- Machine Learning model deployment
-- Docker containerization
-- Docker image management
-- Git and GitHub workflows
-- CI/CD automation using GitHub Actions
-- DockerHub container registry
-- AWS EC2 cloud deployment
-- SSH-based remote deployment
-- Flask web application deployment
-- Cloud networking and port mapping
-- Secure secret management
 
 ---
 
