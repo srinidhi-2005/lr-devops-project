@@ -47,4 +47,4 @@ jobs:
           docker pull ${{ secrets.DOCKER_USERNAME }}/lr-devops-app
           docker stop lr-devops-app || true
           docker rm lr-devops-app || true
-          docker run -d --name lr-devops-app ${{ secrets.DOCKER_USERNAME }}/lr-devops-app
+          docker run -d -p 5000:5000 --name lr-devops-app ${{ secrets.DOCKER_USERNAME }}/lr-devops-app
